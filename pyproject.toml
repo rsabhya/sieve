@@ -1,0 +1,18 @@
+[project]
+name = "sieve-watch"
+version = "0.1.0"
+description = "See what your coding agent actually sends to the model."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["mitmproxy>=10.0"]
+
+[project.scripts]
+sieve = "sieve.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sieve"]
