@@ -4,3 +4,11 @@
 __pycache__/
 build/
 dist/
+
+# macOS
+.DS_Store
+
+# editors
+.vscode/
+.idea/
+*.swp
